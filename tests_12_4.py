@@ -24,7 +24,7 @@ class RunnerTest(unittest.TestCase):
     def test_run(self):
         try:
             leo = rnr.Runner(23, 5)
-            leo.name == str
+            isinstance(leo.name, str)
             logging.info(f"'test_run' выполнен успешно")
             i = 1
             while i <= 10:
